@@ -1,6 +1,4 @@
 {
-  "tests": "./*_test.js",
-  "timeout": 10000,
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
@@ -9,10 +7,16 @@
     }
   },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "pesquisa_googlePage": "./pages/pesquisa_google.js"
   },
-  "bootstrap": false,
   "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "tests": "./*_test.js",
+  "timeout": 10000,
   "name": "projeto-para-arquivo-codecept",
   "translation": "pt-BR"
 }
